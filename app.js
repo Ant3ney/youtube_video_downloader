@@ -6,7 +6,7 @@ async function downloadVideos(urls) {
     try {
       const info = await ytdl.getInfo(url);
       const title = info.videoDetails.title.replace(/[^\w\s]/gi, "_"); // Remove special characters and replace them with underscores.
-      const output = `./anim_soundtrack_02/${title}.mp3`;
+      const output = `./komono/${title}.mp3`;
 
       await new Promise((resolve, reject) => {
         ytdl(url, { filter: "audioonly", quality: "highestaudio" })
@@ -180,92 +180,30 @@ const anim_02 = [
   "LaLz2HJvBRs",
 ];
 
-const videoURLs = [
-  "n7vmMuTOpyk",
-  "L4277gggHto",
-  "fs4cK_XHzcA",
-  "HZyDClHOVJc",
-  "ZboTMHMMmNQ",
-  "One8RSVs8y8",
-  "JEXw6Ck1F2M",
-  "4t2b5R58i44",
-  "ELsc0btFgRI",
-  "12o3cqec5S8",
-  "R8bvkCJkA3w",
-  "4DulYmIa7P8",
-  "M8RsPIu56lk",
-  "t-Av_Yl25X0",
-  "yNaCHVUagAc",
-  "sdaPoUNk5R8",
-  "l-q1-5_UKNc",
-  "h9rTzP2lLq0",
-  "m8m2BYv02Nw",
-  "OPTAgnJ6fFM",
-  "EsNkzuFiMjc",
-  "fUBf56bBu84",
-  "fvOvrNHSwhs",
-  "zo49jQbr4uc",
-  "GAQSUNoQRxg",
-  "LdPyYze2NIA",
-  "1V_xRb0x9aw",
-  "Y374zz0jdk4",
-  "GaktwHjp4dg",
-  "iUs4rRuAzTo",
-  "DzRqVclai54",
-  "bFNGAyMcc7A",
-  "bs11L0EGDw8",
-  "3xoMdojM9pE",
-  "j_AjDz3vLN8",
-  "t8yCLF_DEKc",
-  "ZEEm2H01KXg",
-  "SK-OmLGIRlc",
-  "KazQPfQw3AU",
-  "3kAONTC_flg",
-  "u2slheDbAIw",
-  "at4nQ7UFIso",
-  "zs9LIrQVgII",
-  "GttXXkOR6bI",
-  "PUZNIta34qY",
-  "xYWSHzKWgGU",
-  "XM13xdwmX0Y",
-  "QRuTC4dU81A",
-  "yp5XpFJHqzU",
-  "FuqwJmPc_8I",
-  "zp55dXxzDvU",
-  "-0ogWeoUrCk",
-  "6w9nvzhiGYI",
-  "_axqvkgFAhk",
-  "NG_AZky2Xkc",
-  "qqurerDyf94",
-  "Enb-rTasgyI",
-  "cJ4xxQYPRlc",
-  "zLtntRFuyZs",
-  "6tKiz9GkziQ",
-  "Rycr3Caa5ik",
-  "rNhK_IvyENQ",
-  "hcRyIMN2KHw",
-  "HOvfo9ycY7Q",
-  "yPQ7IkxIshY",
-  "vtBsUnsDc5k",
-  "EtvnYt2Fuj4",
-  "SFnApieSfTY",
-  "5bXS0QR0fz8",
-  "aM5aR8SeIGc",
-  "w9YdcbzcL6Y",
-  "rrae8w5anwI",
-  "goeOUTRy2es",
-  "Iwa5RrpxPMA",
-  "siP0syXBde4",
-  "cckx42PWigk",
-  "7HRixVZK3VQ",
-  "Zm8MTRPaQtc",
-  "nh0OVZxgGxE",
-  "r2jz22IqjzE",
-  "h0uPLRP8Q_w",
-  "UNcRvW6h-uU",
-  "kPGLgjdWm2Q",
-  "yvXZurAwZ_A",
-  "vH0zv9hfjlY",
+const videoURLs = ["twdNHG3NKQU"];
+
+const bambooGunURLs = [
+  "82aGfIwOHRw",
+  "Oxg3Ti58yrI",
+  "4hVuKDWl-54",
+  "hR2mxJQaiO8",
+  "L0NjeeF0kLM",
+  "bjxc7nNhBWc",
+  "18DqrubhOKk",
+  "HwxeLrWymrI",
+  "ySuT6WGdUYc",
+  "kPigK2huBzk",
+  "hcS-DAvsgyk",
 ];
 
-downloadVideos(anim_03).then(() => console.log("All downloads completed."));
+const komonoURLs = [
+  "e1dNnpcek8w",
+  "N3CALZudhkI",
+  "QzsdL9A8qOk",
+  "hrkWfqr1gmo",
+  "blnGyX4CSqM",
+];
+
+//KQVajqoTGMA
+
+downloadVideos(komonoURLs).then(() => console.log("All downloads completed."));
